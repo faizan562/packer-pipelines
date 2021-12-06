@@ -7,8 +7,8 @@ pipeline {
         sh """
         #!/bin/bash
         cd jenkins-tutorial
-        packer init .
-        packer build -force .
+        sudo packer init .
+        sudo packer build -force .
         """
       }
     }
@@ -16,7 +16,7 @@ pipeline {
       steps {
         sh """
         #!/bin/bash
-        docker images
+        sudo docker images
         """
       }
     }
