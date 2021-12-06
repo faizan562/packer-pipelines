@@ -16,7 +16,7 @@ pipeline {
       steps {
         sh """
         #!/bin/bash
-        sudo docker images
+        docker images
         """
       }
     }
